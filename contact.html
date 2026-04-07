@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Контакти — зв'яжіться з Max Design." />
+  <title>Контакти — Max Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Головна навігація">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+      </a>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="../index.html"  class="nav__link">Головна</a></li>
+        <li><a href="about.html"     class="nav__link">Про мене</a></li>
+        <li><a href="portfolio.html" class="nav__link">Портфоліо</a></li>
+        <li><a href="services.html"  class="nav__link">Послуги</a></li>
+        <li><a href="contact.html"   class="nav__link active" aria-current="page">Контакти</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Зв'язатись</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Шлях навігації">
+        <a href="../index.html">Головна</a>
+        <span>/</span>
+        <span aria-current="page">Контакти</span>
+      </nav>
+      <h1>Зв'яжіться зі мною</h1>
+      <p>Маєте проєкт або питання? Напишіть — відповідаю протягом 24 годин.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__inner">
+
+        <!-- Contact info -->
+        <div class="contact__info">
+          <span class="tag">Контакти</span>
+          <h2 id="contact-heading">Давайте створимо щось разом</h2>
+          <p>Відкритий до нових проєктів, співпраці та цікавих пропозицій.</p>
+
+          <address style="font-style:normal;">
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">✉️</div>
+              <a href="mailto:max@design.ua" style="color:#94A3B8;">max@design.ua</a>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">📞</div>
+              <a href="tel:+380501234567" style="color:#94A3B8;">+38 (050) 123-45-67</a>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon" aria-hidden="true">📍</div>
+              <span>Київ, Україна / Remote</span>
+            </div>
+          </address>
+
+          <div class="contact__socials" aria-label="Соцмережі">
+            <a href="#" class="contact__social" aria-label="LinkedIn" title="LinkedIn">in</a>
+            <a href="#" class="contact__social" aria-label="Behance" title="Behance">Be</a>
+            <a href="#" class="contact__social" aria-label="Dribbble" title="Dribbble">Dr</a>
+            <a href="#" class="contact__social" aria-label="Telegram" title="Telegram">tg</a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact__form" role="region" aria-labelledby="form-heading">
+          <h3 id="form-heading" style="margin-bottom:24px;font-size:1.2rem;">Написати повідомлення</h3>
+
+          <form action="#" method="POST" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Ім'я <abbr title="обов'язкове поле">*</abbr></label>
+                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required autocomplete="given-name" />
+              </div>
+              <div class="form__group">
+                <label for="email">Email <abbr title="обов'язкове поле">*</abbr></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="service">Тип послуги</label>
+              <select id="service" name="service">
+                <option value="">Оберіть послугу...</option>
+                <option value="web">Веб-дизайн</option>
+                <option value="mobile">Мобільний UI</option>
+                <option value="brand">Брендинг</option>
+                <option value="ux">UX-аудит</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="message">Повідомлення <abbr title="обов'язкове поле">*</abbr></label>
+              <textarea id="message" name="message" placeholder="Розкажіть про ваш проєкт..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Надіслати повідомлення →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+        </a>
+        <p>UI/UX дизайнер — зручні та красиві цифрові продукти.</p>
+      </div>
+      <nav class="footer__col" aria-label="Навігація">
+        <h4>Навігація</h4>
+        <ul role="list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про мене</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="services.html">Послуги</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <ul role="list">
+          <li><a href="services.html">Веб-дизайн</a></li>
+          <li><a href="services.html">Мобільний UI</a></li>
+          <li><a href="services.html">Брендинг</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <ul role="list">
+          <li><a href="mailto:max@design.ua">max@design.ua</a></li>
+          <li><a href="contact.html">Написати</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Max Design. Всі права захищено.</p>
+      <p>Зроблено з ❤️ в Україні</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 10));
+  document.getElementById('burger').addEventListener('click', function() {
+    const open = document.getElementById('navMenu').classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+
+  /* Form submit */
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type=submit]');
+    btn.textContent = '✓ Надіслано!';
+    btn.disabled = true;
+    btn.style.background = '#22C55E';
+  });
+</script>
+</body>
+</html>

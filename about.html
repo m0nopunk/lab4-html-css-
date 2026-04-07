@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Про мене — Максим, UI/UX дизайнер." />
+  <title>Про мене — Max Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Головна навігація">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+      </a>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="../index.html"  class="nav__link">Головна</a></li>
+        <li><a href="about.html"     class="nav__link active" aria-current="page">Про мене</a></li>
+        <li><a href="portfolio.html" class="nav__link">Портфоліо</a></li>
+        <li><a href="services.html"  class="nav__link">Послуги</a></li>
+        <li><a href="contact.html"   class="nav__link">Контакти</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Зв'язатись</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero" aria-labelledby="about-page-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Шлях навігації">
+        <a href="../index.html">Головна</a>
+        <span>/</span>
+        <span aria-current="page">Про мене</span>
+      </nav>
+      <h1 id="about-page-title">Про мене</h1>
+      <p>Дизайнер із пристрастю до деталей та зручності користувача.</p>
+    </div>
+  </section>
+
+  <!-- About detail -->
+  <section class="section" aria-labelledby="bio-heading">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__photo" aria-hidden="true">
+          <div class="about__photo-frame"></div>
+        </div>
+        <div class="about__text">
+          <span class="tag">Біографія</span>
+          <h2 id="bio-heading">Максим Дизайнер</h2>
+          <p>Привіт! Я UI/UX дизайнер з 3+ роками комерційного досвіду. Спеціалізуюся на веб-дизайні, мобільних застосунках та розробці айдентики для стартапів і малого бізнесу.</p>
+          <p>Закінчив Державний торговельно-економічний університет за спеціальністю «Інженерія програмного забезпечення». Постійно навчаюсь та слідкую за трендами у дизайн-індустрії.</p>
+          <p>В роботі головне — зрозуміти потребу клієнта та кінцевого користувача, а потім знайти просте та елегантне рішення.</p>
+
+          <div class="about__skills">
+            <h4>Технічні навички</h4>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Figma</span><span>95%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="width:95%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>HTML / CSS</span><span>85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="width:85%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>Adobe Illustrator</span><span>80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__label"><span>UX Research</span><span>75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="width:75%"></div></div>
+            </div>
+          </div>
+          <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="portfolio.html" class="btn btn--primary">Мої роботи</a>
+            <a href="contact.html" class="btn btn--outline">Зв'язатись</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section--alt" aria-labelledby="exp-heading">
+    <div class="container">
+      <header class="section__header">
+        <span class="tag">Досвід</span>
+        <h2 id="exp-heading">Освіта та робота</h2>
+      </header>
+
+      <div style="max-width:700px;margin:0 auto;">
+        <article style="display:grid;grid-template-columns:120px 1fr;gap:24px;margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--clr-border);">
+          <time style="font-size:.85rem;font-weight:600;color:var(--clr-accent);padding-top:4px;">2022 — тепер</time>
+          <div>
+            <h3 style="margin-bottom:4px;">UI/UX дизайнер — Freelance</h3>
+            <p style="margin-bottom:8px;font-size:.9rem;font-weight:600;color:var(--clr-text);">Фріланс / Remote</p>
+            <p>Розробка веб-сайтів, мобільних застосунків та брендингу для клієнтів з України та закордону.</p>
+          </div>
+        </article>
+        <article style="display:grid;grid-template-columns:120px 1fr;gap:24px;margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--clr-border);">
+          <time style="font-size:.85rem;font-weight:600;color:var(--clr-accent);padding-top:4px;">2021 — 2022</time>
+          <div>
+            <h3 style="margin-bottom:4px;">Junior UI Designer — TechStart</h3>
+            <p style="margin-bottom:8px;font-size:.9rem;font-weight:600;color:var(--clr-text);">Київ, Україна</p>
+            <p>Участь у дизайні SaaS-продукту: екрани, компоненти, іконографіка.</p>
+          </div>
+        </article>
+        <article style="display:grid;grid-template-columns:120px 1fr;gap:24px;">
+          <time style="font-size:.85rem;font-weight:600;color:var(--clr-accent);padding-top:4px;">2017 — 2021</time>
+          <div>
+            <h3 style="margin-bottom:4px;">Бакалавр — ДТЕУ</h3>
+            <p style="margin-bottom:8px;font-size:.9rem;font-weight:600;color:var(--clr-text);">Факультет кібернетики</p>
+            <p>Спеціальність «Інженерія програмного забезпечення».</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+        </a>
+        <p>UI/UX дизайнер — зручні та красиві цифрові продукти.</p>
+      </div>
+      <nav class="footer__col" aria-label="Навігація">
+        <h4>Навігація</h4>
+        <ul role="list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про мене</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="services.html">Послуги</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <ul role="list">
+          <li><a href="services.html">Веб-дизайн</a></li>
+          <li><a href="services.html">Мобільний UI</a></li>
+          <li><a href="services.html">Брендинг</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <ul role="list">
+          <li><a href="mailto:max@design.ua">max@design.ua</a></li>
+          <li><a href="contact.html">Написати</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Max Design. Всі права захищено.</p>
+      <p>Зроблено з ❤️ в Україні</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 10));
+  document.getElementById('burger').addEventListener('click', function() {
+    const open = document.getElementById('navMenu').classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

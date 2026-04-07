@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфоліо — веб-дизайн, мобільні застосунки, брендинг." />
+  <title>Портфоліо — Max Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Головна навігація">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Max Design — на головну">
+        <div class="nav__logo-mark" aria-hidden="true">AD</div>Max Design
+      </a>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="../index.html"    class="nav__link">Головна</a></li>
+        <li><a href="about.html"       class="nav__link">Про мене</a></li>
+        <li><a href="portfolio.html"   class="nav__link active" aria-current="page">Портфоліо</a></li>
+        <li><a href="services.html"    class="nav__link">Послуги</a></li>
+        <li><a href="contact.html"     class="nav__link">Контакти</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Зв'язатись</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Page hero -->
+  <section class="page-hero" aria-labelledby="portfolio-page-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Шлях навігації">
+        <a href="../index.html">Головна</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Портфоліо</span>
+      </nav>
+      <h1 id="portfolio-page-title">Мої роботи</h1>
+      <p>Підбірка проєктів у сфері веб-дизайну, мобільних застосунків та брендингу.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio section -->
+  <section class="section portfolio-full" aria-labelledby="works-heading">
+    <div class="container">
+      <!-- Filters -->
+      <nav aria-label="Фільтр проєктів">
+        <ul class="portfolio__filters" role="list" id="filters">
+          <li><button class="filter-btn active" data-filter="all">Всі роботи</button></li>
+          <li><button class="filter-btn" data-filter="web">Веб-дизайн</button></li>
+          <li><button class="filter-btn" data-filter="mobile">Мобільні</button></li>
+          <li><button class="filter-btn" data-filter="brand">Брендинг</button></li>
+        </ul>
+      </nav>
+
+      <ul class="portfolio__grid" id="portfolioGrid" role="list">
+
+        <li data-cat="web">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#667eea,#764ba2)">🛍️</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Веб-дизайн</p>
+              <h3 class="card__title">ShopFlow — e-commerce</h3>
+              <p class="card__desc">Редизайн інтернет-магазину з акцентом на конверсії та UX.</p>
+            </div>
+          </article>
+        </li>
+
+        <li data-cat="mobile">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#f093fb,#f5576c)">📱</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Мобільний застосунок</p>
+              <h3 class="card__title">FitTrack — фітнес-трекер</h3>
+              <p class="card__desc">iOS/Android застосунок для відстеження тренувань.</p>
+            </div>
+          </article>
+        </li>
+
+        <li data-cat="brand">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">✦</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Брендинг</p>
+              <h3 class="card__title">Bloom — айдентика кав'ярні</h3>
+              <p class="card__desc">Логотип, меню, упаковка, соцмережі.</p>
+            </div>
+          </article>
+        </li>
+
+        <li data-cat="web">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">🏠</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Веб-дизайн</p>
+              <h3 class="card__title">NestFinder — нерухомість</h3>
+              <p class="card__desc">Сервіс пошуку нерухомості з картою та фільтрами.</p>
+            </div>
+          </article>
+        </li>
+
+        <li data-cat="mobile">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#fa709a,#fee140)">🧠</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Мобільний застосунок</p>
+              <h3 class="card__title">MindFlow — медитації</h3>
+              <p class="card__desc">Застосунок для медитацій та відстеження настрою.</p>
+            </div>
+          </article>
+        </li>
+
+        <li data-cat="brand">
+          <article class="card">
+            <div class="card__img">
+              <div class="card__img-placeholder" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)">🎨</div>
+              <div class="card__img-overlay"><a href="#">Переглянути →</a></div>
+            </div>
+            <div class="card__body">
+              <p class="card__cat">Брендинг</p>
+              <h3 class="card__title">Artly — студія дизайну</h3>
+              <p class="card__desc">Фірмовий стиль для дизайн-студії.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+        </a>
+        <p>UI/UX дизайнер — зручні та красиві цифрові продукти.</p>
+      </div>
+      <nav class="footer__col" aria-label="Навігація у підвалі">
+        <h4>Навігація</h4>
+        <ul role="list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про мене</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="services.html">Послуги</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Категорії</h4>
+        <ul role="list">
+          <li><a href="#">Веб-дизайн</a></li>
+          <li><a href="#">Мобільні</a></li>
+          <li><a href="#">Брендинг</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <ul role="list">
+          <li><a href="mailto:max@design.ua">max@design.ua</a></li>
+          <li><a href="contact.html">Написати</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Max Design. Всі права захищено.</p>
+      <p>Зроблено з ❤️ в Україні</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 10));
+  document.getElementById('burger').addEventListener('click', function() {
+    const open = document.getElementById('navMenu').classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+
+  /* Filter logic */
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('#portfolioGrid li').forEach(item => {
+        item.style.display = (filter === 'all' || item.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

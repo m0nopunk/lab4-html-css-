@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Max Design — портфоліо UI/UX дизайнера. Веб-дизайн, мобільні застосунки, брендинг." />
+  <title>Max Design — UI/UX Designer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION (3.1.1 логотип + 3.1.2 навігація)
+═══════════════════════════════════════════════════════════ -->
+<header>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Головна навігація">
+    <div class="container nav__inner">
+
+      <!-- Логотип (3.1.1) -->
+      <a href="index.html" class="nav__logo" aria-label="Max Design — на головну">
+        <div class="nav__logo-mark" aria-hidden="true">MD</div>
+        Max Design
+      </a>
+
+      <!-- Навігаційне меню (3.1.2) -->
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="index.html"         class="nav__link active" aria-current="page">Головна</a></li>
+        <li><a href="pages/about.html"   class="nav__link">Про мене</a></li>
+        <li><a href="pages/portfolio.html" class="nav__link">Портфоліо</a></li>
+        <li><a href="pages/services.html"  class="nav__link">Послуги</a></li>
+        <li><a href="pages/contact.html"   class="nav__link">Контакти</a></li>
+      </ul>
+
+      <a href="pages/contact.html" class="btn btn--primary nav__cta">Зв'язатись</a>
+      <button class="nav__burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO / HEADER SECTION (3.1.3)
+═══════════════════════════════════════════════════════════ -->
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero__inner">
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">UI/UX дизайнер</p>
+
+        <h1 class="hero__title" id="hero-title">
+          Максим <span>Дизайнер</span><br />для цифрового світу
+        </h1>
+
+        <p class="hero__subtitle">
+          Створюю зручні та красиві інтерфейси для веб та мобільних
+          платформ. Від концепції до готового прототипу.
+        </p>
+
+        <div class="hero__actions">
+          <a href="pages/portfolio.html" class="btn btn--primary">Переглянути роботи</a>
+          <a href="#" class="btn btn--outline" download>Завантажити CV</a>
+        </div>
+
+        <div class="hero__stats" role="list">
+          <div role="listitem">
+            <p class="hero__stat-num">50+</p>
+            <p class="hero__stat-label">Проєктів</p>
+          </div>
+          <div role="listitem">
+            <p class="hero__stat-num">3+</p>
+            <p class="hero__stat-label">Роки досвіду</p>
+          </div>
+          <div role="listitem">
+            <p class="hero__stat-num">98%</p>
+            <p class="hero__stat-label">Задоволених клієнтів</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__avatar"></div>
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Доступний до роботи
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN — Selected Works (3.1.4)
+═══════════════════════════════════════════════════════════ -->
+<section class="section" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <header class="section__header">
+      <span class="tag">Портфоліо</span>
+      <h2 id="portfolio-heading">Вибрані роботи</h2>
+      <p>Підбірка найкращих проєктів у сфері веб-дизайну, мобільних застосунків та брендингу.</p>
+    </header>
+
+    <ul class="portfolio__grid" role="list">
+
+      <!-- Картка 1 -->
+      <li>
+        <article class="card">
+          <div class="card__img">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#667eea,#764ba2)">🛍️</div>
+            <div class="card__img-overlay">
+              <a href="pages/portfolio.html">Переглянути →</a>
+            </div>
+          </div>
+          <div class="card__body">
+            <p class="card__cat">Веб-дизайн</p>
+            <h3 class="card__title">ShopFlow — e-commerce</h3>
+            <p class="card__desc">Редизайн інтернет-магазину з акцентом на конверсії та UX-оптимізації.</p>
+          </div>
+        </article>
+      </li>
+
+      <!-- Картка 2 -->
+      <li>
+        <article class="card">
+          <div class="card__img">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#f093fb,#f5576c)">📱</div>
+            <div class="card__img-overlay">
+              <a href="pages/portfolio.html">Переглянути →</a>
+            </div>
+          </div>
+          <div class="card__body">
+            <p class="card__cat">Мобільний застосунок</p>
+            <h3 class="card__title">FitTrack — фітнес-трекер</h3>
+            <p class="card__desc">iOS/Android застосунок для відстеження тренувань та харчування.</p>
+          </div>
+        </article>
+      </li>
+
+      <!-- Картка 3 -->
+      <li>
+        <article class="card">
+          <div class="card__img">
+            <div class="card__img-placeholder" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">✦</div>
+            <div class="card__img-overlay">
+              <a href="pages/portfolio.html">Переглянути →</a>
+            </div>
+          </div>
+          <div class="card__body">
+            <p class="card__cat">Брендинг</p>
+            <h3 class="card__title">Bloom — айдентика кав'ярні</h3>
+            <p class="card__desc">Повна система айдентики: логотип, меню, упаковка, соцмережі.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <div style="text-align:center; margin-top:48px;">
+      <a href="pages/portfolio.html" class="btn btn--outline">Усі проєкти →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN — Services (3.1.4)
+═══════════════════════════════════════════════════════════ -->
+<section class="section section--alt" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section__header">
+      <span class="tag">Послуги</span>
+      <h2 id="services-heading">Що я пропоную</h2>
+      <p>Комплексний підхід до дизайну — від стратегії до реалізації.</p>
+    </header>
+
+    <ul class="services__grid" role="list">
+      <li>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🖥️</div>
+          <h3>Веб-дизайн</h3>
+          <p>Сучасні, адаптивні лендінги та корпоративні сайти з фокусом на конверсії та зручності.</p>
+        </article>
+      </li>
+      <li>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">📱</div>
+          <h3>Мобільний UI</h3>
+          <p>Інтуїтивні інтерфейси для iOS та Android відповідно до гайдлайнів платформ.</p>
+        </article>
+      </li>
+      <li>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">✦</div>
+          <h3>Брендинг</h3>
+          <p>Розробка логотипів, кольорової системи та повного бренд-буку для бізнесу.</p>
+        </article>
+      </li>
+      <li>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">🔍</div>
+          <h3>UX-аудит</h3>
+          <p>Аналіз існуючого продукту, виявлення слабких місць та рекомендації щодо покращення.</p>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN — About teaser (3.1.4)
+═══════════════════════════════════════════════════════════ -->
+<section class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__photo" aria-hidden="true">
+        <div class="about__photo-frame"></div>
+      </div>
+
+      <div class="about__text">
+        <span class="tag about__tag">Про мене</span>
+        <h2 id="about-heading">Дизайнер із пристрастю до деталей</h2>
+        <p>Привіт! Я Максим — UI/UX дизайнер з 3+ роками досвіду у створенні цифрових продуктів.
+           Спеціалізуюсь на веб-дизайні, мобільних застосунках та брендингу.</p>
+        <p>Моя мета — робити продукти, якими люди справді хочуть користуватись.
+           Поєдную естетику з функціональністю та завжди думаю про кінцевого користувача.</p>
+
+        <div class="about__skills">
+          <h4>Ключові навички</h4>
+          <div class="skill-bar">
+            <div class="skill-bar__label"><span>Figma / Prototyping</span><span>95%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__label"><span>HTML / CSS</span><span>85%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__label"><span>UX Research</span><span>80%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" style="width:80%"></div></div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;">
+          <a href="pages/about.html" class="btn btn--primary">Більше про мене →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT TEASER
+═══════════════════════════════════════════════════════════ -->
+<section class="section section--dark" aria-labelledby="contact-teaser">
+  <div class="container" style="text-align:center;">
+    <span class="tag">Контакти</span>
+    <h2 id="contact-teaser" style="color:var(--clr-white);margin:12px 0;">Маєте проєкт?</h2>
+    <p style="max-width:440px;margin:0 auto 36px;">Напишіть мені — обговоримо деталі та знайдемо найкраще рішення разом.</p>
+    <a href="pages/contact.html" class="btn btn--primary" style="margin-right:12px;">Написати</a>
+    <a href="mailto:max@design.ua" class="btn btn--ghost-light">max@design.ua</a>
+  </div>
+</section>
+</main>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER (3.1.5)
+═══════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="Max Design">
+          <div class="nav__logo-mark" aria-hidden="true">MD</div>
+          Max Design
+        </a>
+        <p>UI/UX дизайнер, що створює зручні та красиві цифрові продукти.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Навігація у підвалі">
+        <h4>Навігація</h4>
+        <ul role="list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="pages/about.html">Про мене</a></li>
+          <li><a href="pages/portfolio.html">Портфоліо</a></li>
+          <li><a href="pages/services.html">Послуги</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <ul role="list">
+          <li><a href="pages/services.html">Веб-дизайн</a></li>
+          <li><a href="pages/services.html">Мобільний UI</a></li>
+          <li><a href="pages/services.html">Брендинг</a></li>
+          <li><a href="pages/services.html">UX-аудит</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <ul role="list">
+          <li><a href="mailto:max@design.ua">max@design.ua</a></li>
+          <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+          <li><a href="pages/contact.html">Написати</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2024 Max Design. Всі права захищено.</p>
+      <p>Зроблено з ❤️ в Україні</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Sticky nav shadow */
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scrolled', window.scrollY > 10);
+  });
+
+  /* Mobile burger */
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('navMenu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

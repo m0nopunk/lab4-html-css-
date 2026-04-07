@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Послуги — веб-дизайн, мобільний UI, брендинг, UX-аудит." />
+  <title>Послуги — Max Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Головна навігація">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+      </a>
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="../index.html"  class="nav__link">Головна</a></li>
+        <li><a href="about.html"     class="nav__link">Про мене</a></li>
+        <li><a href="portfolio.html" class="nav__link">Портфоліо</a></li>
+        <li><a href="services.html"  class="nav__link active" aria-current="page">Послуги</a></li>
+        <li><a href="contact.html"   class="nav__link">Контакти</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary nav__cta">Зв'язатись</a>
+      <button class="nav__burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Шлях навігації">
+        <a href="../index.html">Головна</a>
+        <span>/</span>
+        <span aria-current="page">Послуги</span>
+      </nav>
+      <h1>Послуги</h1>
+      <p>Комплексний підхід до дизайну — від ідеї до готового продукту.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="services-detail">
+    <div class="container">
+      <header class="section__header">
+        <span class="tag">Що я роблю</span>
+        <h2 id="services-detail">Мої послуги</h2>
+        <p>Охоплюю весь цикл UI/UX дизайну — дослідження, прототипування, візуальний дизайн та підтримка.</p>
+      </header>
+
+      <ul class="services__grid" role="list">
+        <li>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🖥️</div>
+            <h3>Веб-дизайн</h3>
+            <p>Сучасні адаптивні сайти: лендінги, корпоративні сайти, e-commerce. Акцент на конверсії та зручності.</p>
+            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:6px;">
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Wireframe та прототип</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> UI-дизайн у Figma</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Адаптивна верстка</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">📱</div>
+            <h3>Мобільний UI</h3>
+            <p>Інтуїтивні iOS та Android інтерфейси. Дотримання HIG та Material Design.</p>
+            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:6px;">
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> UX-дослідження</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Інтерактивний прототип</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Дизайн-система</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">✦</div>
+            <h3>Брендинг</h3>
+            <p>Розробка візуальної айдентики від логотипу до повного бренд-буку.</p>
+            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:6px;">
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Логотип</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Кольорова система</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Бренд-бук</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🔍</div>
+            <h3>UX-аудит</h3>
+            <p>Аналіз існуючого продукту, виявлення проблем та рекомендації щодо покращення.</p>
+            <ul style="margin-top:14px;display:flex;flex-direction:column;gap:6px;">
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Heuristic evaluation</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Звіт з рекомендаціями</li>
+              <li style="font-size:.85rem;color:var(--clr-muted);display:flex;gap:6px;align-items:center;"><span style="color:var(--clr-accent)">✓</span> Пріоритизація змін</li>
+            </ul>
+          </article>
+        </li>
+      </ul>
+
+      <div style="text-align:center;margin-top:60px;">
+        <a href="contact.html" class="btn btn--primary">Обговорити проєкт →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="nav__logo">
+          <div class="nav__logo-mark" aria-hidden="true">MD</div>Max Design
+        </a>
+        <p>UI/UX дизайнер — зручні та красиві цифрові продукти.</p>
+      </div>
+      <nav class="footer__col" aria-label="Навігація">
+        <h4>Навігація</h4>
+        <ul role="list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Про мене</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="services.html">Послуги</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <ul role="list">
+          <li><a href="#">Веб-дизайн</a></li>
+          <li><a href="#">Мобільний UI</a></li>
+          <li><a href="#">Брендинг</a></li>
+          <li><a href="#">UX-аудит</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <ul role="list">
+          <li><a href="mailto:max@design.ua">max@design.ua</a></li>
+          <li><a href="contact.html">Написати</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Max Design. Всі права захищено.</p>
+      <p>Зроблено з ❤️ в Україні</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 10));
+  document.getElementById('burger').addEventListener('click', function() {
+    const open = document.getElementById('navMenu').classList.toggle('open');
+    this.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
