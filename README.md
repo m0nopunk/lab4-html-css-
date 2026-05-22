@@ -4,6 +4,8 @@ portfolio/
 ├── index.html          ← головна сторінка
 ├── css/
 │   └── style.css       ← всі стилі
+├── js/
+│   └── main.js       ← скрипти
 └── pages/
     ├── about.html      ← Про мене
     ├── portfolio.html  ← Портфоліо
